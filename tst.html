@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="teste">
+        <span id="array">Numero</span>
+        
+    </div>
+
+    <button onclick="numero()">Numero</button>
+    <button onclick="zero()"> Zero</button>
+ 
+    <script>
+       let arr0 = [0,1,2,3,4,5]
+       let arr1 = ['zero']
+
+    
+       
+       function numero(){ 
+           
+           let pegaNumero = document.getElementById('teste')
+               arr0.forEach((valor, i) => {
+               let criaElemento = document.createElement('span')
+               criaElemento.innerHTML = valor + ('\n')
+               pegaNumero.append(criaElemento)
+               console.log(valor)
+            })
+        }
+        
+        
+        function zero(){
+            
+            let pegaNumero = document.getElementById('teste')
+            arr1.forEach((valor, i) => {
+                let criaElemento = document.createElement('span')
+                criaElemento.innerHTML = valor + ('\n')
+                pegaNumero.append(criaElemento)
+                console.log(valor)
+            })
+        }
+        
+        function removeElementos(){
+            let pegaNumero = document.getElementById('teste').textContent = ''
+           
+        }
+
+    </script>
+
+</body>
+</html>

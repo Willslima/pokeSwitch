@@ -1,0 +1,424 @@
+* {
+    padding: 0 auto;
+    margin: 0 ;
+}
+
+body {
+    width: 1160px;
+    height: 520px;
+    min-width: 620px;
+    background-image: url("./src/switch-mod.png");
+    background-repeat: no-repeat;
+}
+
+#container {
+    /* border: 1px solid blue; */
+    background: #26272b;
+    margin-left: 282px;
+    margin-top: 100px;
+    width: 577px;
+    height: 325px;
+}
+
+#container-f-index {
+    background: url(./src/fundo.jpg);
+    margin-left: 282px;
+    margin-top: 100px;
+    width: 577px;
+    height: 325px;
+}
+
+#container-f-desc {
+    background: url(./src/fundo.jpg);
+    margin-left: 282px;
+    margin-top: 100px;
+    width: 577px;
+    height: 325px;
+}
+
+#titulo {
+    float: left;
+    margin-top: 5px;
+    margin-left: 35%;
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    width: 60%;
+    height: 14%;
+    line-height: 50px;
+}
+
+#dados-pkmn {
+    /* border: 1px solid green; */
+    float: left;
+    margin-top: -50px;
+    width: 30%;
+    height: 100%;
+    padding: 5px;
+}
+
+#dados-pkmn #nome {
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+#dados-pkmn #imagem {
+    /* border: 1px solid red; */
+    height: 75%;
+    padding: 7px;
+}
+
+#imagem-pokemon {
+    height: 70%;
+}
+
+#pesquisa {
+    background: #000;
+    float: left;
+    padding: 10px 35px;
+    margin: 7px 2px;
+    width: 55%;
+    border-radius: 10px;
+}
+
+#tipo {
+    float: left;
+    padding: 10px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 55%;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+#vantagens {
+    float: left;
+    background: #000;
+    color: #fff;
+    padding: 10px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 55%;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+
+#hab {
+    float: left;
+    background: #000;
+    padding: 0 25px;
+    width: 58%;
+    height: max-content;
+    border: 1px solid #000;
+    margin: 3px 0;
+    border-radius: 10px;
+
+}
+
+#hab #habilidade {
+    background: #fff;
+    width: 24%;
+    line-height: 25px;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#desc {
+    float: left;
+    /* margin-left: 13%; */
+    margin-top: 3px;
+    text-align: center;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+#desc-button {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#desc-index {
+    float: left;
+    margin-top: 260px;
+    margin-left: 220px;
+}
+
+#desc-index button {
+    background: #000;
+    color: #fff;
+    line-height: 45px;
+    border-radius: 15px;
+}
+
+#desc-descricao {
+    float: left;
+    margin-top: -10px;
+    margin-left: 220px;
+}
+
+#desc-descricao button {
+    background: #000;
+    color: #fff;
+    line-height: 45px;
+    border-radius: 15px;
+}
+#conteudo {
+    margin: 15px;
+   float: left;
+   /* border: 1px solid red; */
+   width: 95%;
+   height: max-content;
+}
+
+#conteudo-habilidades {
+    background: #fff;
+    float: left;
+    width: 45%;
+    height: 120px;
+    margin-left: 1%;
+    padding-left: 4%;
+    border-radius: 15px;
+    margin-top: 5px;
+    line-height: 25px;
+    overflow: auto;
+}
+
+/* Tipos de pokemon */
+
+
+.normal {
+    background-color: #a8a878;
+}
+
+.fire {
+    background-color: #f08030;
+}
+
+.water {
+    background-color: #6890f0;
+}
+
+.grass {
+    background-color: #78c850;
+}
+
+.electric {
+    background-color: #f8d030;
+}
+
+.ice {
+    background-color: #98d8d8;
+}
+
+.fighting {
+    background-color: #c1322a;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.ground {
+    background-color: #e0c068;
+}
+
+.flying {
+   background-color: #a890f0; 
+}
+
+.psychic {
+    background-color: #f85888;
+}
+
+.bug {
+    background-color: #a8b820;
+}
+
+.rock {
+    background-color: #b8a038;
+}
+
+.ghost {
+    background-color: #705898;
+}
+
+.dragon {
+    background-color: #7038f8;
+} 
+
+.dark {
+ background-color: #705848;
+}
+
+.steel {
+    background-color: #b8b8d0;
+}
+
+.fairy {
+    background-color: #ff9be1;
+}
+
+/* estilo do painel vantagens */
+#db {
+    width: 110%;
+    line-height: 25px;
+    margin-left: -15px;
+    
+}
+
+#hdt {
+    width: 110%;
+    line-height: 25px;
+    margin-left: -15px;
+    
+}
+
+#ndt {
+    width: 110%;
+    line-height: 25px;
+    margin-left: -15px;
+    
+}
+
+/* Descrição dos tipos - vantagens e desvantagens */
+
+#db-desc0 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 3px;
+}
+
+#db-desc1 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#db-desc2 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#db-desc3 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 3px;
+}
+
+#db-desc4 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#db-desc5 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#db-desc6 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#hdt-desc0 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#hdt-desc1 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#hdt-desc2 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#hdt-desc3 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#hdt-desc4 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#hdt-desc5 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#hdt-desc6 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#ndt-desc0 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#ndt-desc1 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#ndt-desc2 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px; 
+}
+
+#ndt-desc3 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px; 
+}
+
+#ndt-desc4 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+#ndt-desc5 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px; 
+}
+
+#ndt-desc6 {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 5px; 
+}

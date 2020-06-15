@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PokeSwitch</title>
+</head>
+
+<body>
+    <div id="container">
+       
+        <div id="titulo">
+            <h1>Pokémon</h1>
+        </div>
+
+        <div id="dados-pkmn">
+            <div id="nome">
+                Wobbuffet
+            </div>
+            <div id="imagem">
+                <img id="imagem-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png" width="100%" >
+                <div id="tipo" class="psychic">
+                    Psychic
+                </div>
+                <div id="desc">
+                    <button id="desc-button" onclick="window.location.href='descricao.html'">Ver descrição das habilidades</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="pesquisa">
+            <div id="campos">
+                <input id="search" type="text" placeholder="Digite nome/n° do Pokemon">
+                <button id="botao" onclick="pesquisa()">Pesquisar Pokemon</button>
+            </div>
+        </div>
+
+        <div id="vantagens">
+
+            <div id="db">Doble dmg to - 
+                <span id="db-desc0"> tipo </span>
+                <span id="db-desc1"> tipo </span> 
+                <span id="db-desc2"> tipo </span>
+                <span id="db-desc3"> tipo </span> 
+                <span id="db-desc4"> tipo </span>
+                <span id="db-desc5"> tipo </span> 
+                <span id="db-desc6"> tipo </span>
+            </div>
+
+            <!-- <div id="hdf">Half dmg from - 
+                <span id="hdf-desc0"> tipo</span>
+                <span id="hdf-desc1"> tipo</span>
+
+            </div>  -->
+
+            <div id="hdt">half dmg to - 
+                <span id="hdt-desc0"> tipo</span>
+                <span id="hdt-desc1"> tipo</span>
+                <span id="hdt-desc2"> tipo</span>
+                <span id="hdt-desc3"> tipo</span>
+                <span id="hdt-desc4"> tipo</span>
+                <span id="hdt-desc5"> tipo</span>
+                <span id="hdt-desc6"> tipo</span>
+
+
+            </div>
+
+            <!-- <div id="ndf">No dmg from - 
+                <span id="ndf-desc"> tipo</span>
+                <span id="ndf-desc"> tipo</span>
+
+            </div> -->
+
+            <div id="ndt">No dmg to - 
+                <span id="ndt-desc0"> tipo</span>
+                <span id="ndt-desc1"> tipo</span>
+                <span id="ndt-desc2"> tipo</span>
+                <span id="ndt-desc3"> tipo</span>
+                <span id="ndt-desc4"> tipo</span>
+                <span id="ndt-desc5"> tipo</span>
+                <span id="ndt-desc6"> tipo</span>
+            </div>
+
+        </div>
+
+        <div id="hab">
+            <div id="habilidade">habilidades</div>
+            <div id="habilidade">habilidades</div>
+            <div id="habilidade">habilidades</div>
+            <div id="habilidade">habilidades</div>
+            
+        </div>
+
+        <!-- <div id="desc">
+            <button id="desc-button" onclick="window.location.href='descricao.html'">Ver descrição das habilidades</button>
+        </div> -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">
+    </script>
+    <script src="./app.js">
+    </script>
+</body>
+
+</html>
