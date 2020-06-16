@@ -28,7 +28,18 @@ function pesquisa (){
             
             //pegando descrição
             let desc = habilidade.ability.url
-            // console.log(desc) - Tudo ok, link da descrição de habilidades
+           //console.log(desc) // - Tudo ok, link da descrição de habilidades
+           axios.get(desc)
+           .then(descricao => {
+            let descricaoHabilidades = descricao.data.effect_entries[1]
+            // console.log(descricaoHabilidades)
+            let pegaDescricao = document.getElementById('conteudo')
+            let criaDescricao = document.createElement('div')
+            criaDescricao.setAttribute('id','conteudo-habilidades')
+            criaDescricao.textContent = 'oi'
+            pegaDescricao.append(criaDescricao)
+        })
+           .catch(erro => console.log(erro))
             
         })
         //removendo habilidades existentes
@@ -67,43 +78,43 @@ function pesquisa (){
             //HABILIDADES 
 
             let dobleDamageTo = tiposDeDanos.double_damage_to //Dobro de dano em
-            console.log(dobleDamageTo)
+            // console.log(dobleDamageTo)
             dobleDamageTo.forEach((tipo, i) => {
                 let nomeTipo = tipo.name
                // console.log(nomeTipo)
                 let pegaDDT = document.getElementById('db-desc' + i)
                 pegaDDT.setAttribute('class', nomeTipo)
                 pegaDDT.innerText = nomeTipo
-                console.log(pegaDDT)
+                // console.log(pegaDDT)
             })
             
           
             let halfDamageTo = tiposDeDanos.half_damage_to //metade do dano em
-            console.log(halfDamageTo)
+            // console.log(halfDamageTo)
             halfDamageTo.forEach((tipo, i) => {
                 let nomeTipo = tipo.name
                 // console.log(nomeTipo,i)
                 let pegaHDT = document.getElementById('hdt-desc' + i)
                 pegaHDT.setAttribute('class', nomeTipo)
                 pegaHDT.innerText = nomeTipo
-                console.log(pegaHDT)
+                // console.log(pegaHDT)
             })
 
             
             let noDamageTo = tiposDeDanos.no_damage_to //não da dano em
-            console.log(noDamageTo)
+            // console.log(noDamageTo)
             noDamageTo.forEach((tipo,i) => {
                 let nomeTipo = tipo.name
                 // console.log(tipo.name,i)
                 let pegaNDT = document.getElementById('ndt-desc' + i)
                 pegaNDT.setAttribute('class', nomeTipo)
                 pegaNDT.innerHTML = nomeTipo
-                console.log(pegaNDT)
+                // console.log(pegaNDT)
             })
 
 
         })
-        .catch()
+        .catch(erro => console.log(erro))
         
 
     })
