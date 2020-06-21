@@ -8,7 +8,7 @@ function pesquisa() {
     axios.get(`https://pokeapi.co/api/v2/pokemon/${busca}`)
         .then(pokemon => {
             const { name, abilities, sprites } = pokemon.data
-            console.log('Dentro do axios')
+            // console.log('Dentro do axios')
             //adicionando nome 
             let nomePokemon = document.getElementById('nome')
             nomePokemon.innerText = name
@@ -25,7 +25,7 @@ function pesquisa() {
                 let hab = habilidade.ability.name
                 let pegaCampoHabilidade = document.getElementById('habilidade' + indice)
                 pegaCampoHabilidade.innerHTML = indice + ' - ' + hab
-                console.log(pegaCampoHabilidade.textContent)
+                // console.log(pegaCampoHabilidade.textContent)
 
             })
 
