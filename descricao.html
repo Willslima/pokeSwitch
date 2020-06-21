@@ -5,28 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./app.js">
+    </script>
     <title>PokeSwitch</title>
 </head>
 
-<body>
-    <div id="container-f-desc">
+<body onload="carregaDescricao()"> 
+    <div id="container-f-desc" >
         
         <div id="conteudo">
-            <div id="conteudo-habilidades">
-                Habilidade1                
-            </div>            
+ 
         </div>
         
         <div id="desc-descricao">
-            <button onclick="window.location.href='jogo.html'">Voltar para pesquisa</button>
+            <button onclick="window.location.href='jogo.html'",link() >Voltar para pesquisa</button>
         </div>
-        
+
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">
     </script>
-    <script src="./app.js">
-    </script>
+    <!-- <script src="./app.js">
+    </script> -->
+    
 </body>
 
 </html>

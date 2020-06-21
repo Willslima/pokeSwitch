@@ -15,16 +15,22 @@
 
     <button onclick="numero()">Numero</button>
     <button onclick="zero()"> Zero</button>
+    <button onclick="removeElementos()"> limpar</button>
  
     <script>
        let arr0 = [0,1,2,3,4,5]
        let arr1 = ['zero']
 
-    
+        let verificacao = document.getElementById('array').textContent
+        if (verificacao == 'Numero'){
+            console.log('é isso')
+        } else {
+            console.log('deu ruim')
+        }
        
-       function numero(){ 
-           
+        function numero(){ 
            let pegaNumero = document.getElementById('teste')
+           pegaNumero.innerHTML = ''
                arr0.forEach((valor, i) => {
                let criaElemento = document.createElement('span')
                criaElemento.innerHTML = valor + ('\n')
@@ -33,10 +39,10 @@
             })
         }
         
-        
         function zero(){
             
             let pegaNumero = document.getElementById('teste')
+            pegaNumero.innerHTML = ''
             arr1.forEach((valor, i) => {
                 let criaElemento = document.createElement('span')
                 criaElemento.innerHTML = valor + ('\n')
@@ -46,7 +52,7 @@
         }
         
         function removeElementos(){
-            let pegaNumero = document.getElementById('teste').textContent = ''
+            let pegaNumero = document.getElementById('teste').innerHTML = ''
            
         }
 

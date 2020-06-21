@@ -128,7 +128,43 @@ body {
 
 }
 
-#hab #habilidade {
+#hab #habilidade0 {
+    background: #fff;
+    width: 24%;
+    line-height: 25px;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#hab #habilidade1{
+    background: #fff;
+    width: 24%;
+    line-height: 25px;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#hab #habilidade2 {
+    background: #fff;
+    width: 24%;
+    line-height: 25px;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#hab #habilidade3{
     background: #fff;
     width: 24%;
     line-height: 25px;
@@ -153,7 +189,7 @@ body {
 
 #desc-button {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 #desc-index {
@@ -189,7 +225,46 @@ body {
    height: max-content;
 }
 
-#conteudo-habilidades {
+#conteudo-habilidades0 {
+    background: #fff;
+    float: left;
+    width: 45%;
+    height: 120px;
+    margin-left: 1%;
+    padding-left: 4%;
+    border-radius: 15px;
+    margin-top: 5px;
+    line-height: 25px;
+    overflow: auto;
+}
+
+#conteudo-habilidades1 {
+    background: #fff;
+    float: left;
+    width: 45%;
+    height: 120px;
+    margin-left: 1%;
+    padding-left: 4%;
+    border-radius: 15px;
+    margin-top: 5px;
+    line-height: 25px;
+    overflow: auto;
+}
+
+#conteudo-habilidades2 {
+    background: #fff;
+    float: left;
+    width: 45%;
+    height: 120px;
+    margin-left: 1%;
+    padding-left: 4%;
+    border-radius: 15px;
+    margin-top: 5px;
+    line-height: 25px;
+    overflow: auto;
+}
+
+#conteudo-habilidades3 {
     background: #fff;
     float: left;
     width: 45%;
